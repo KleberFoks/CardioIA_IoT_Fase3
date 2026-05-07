@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "author": "Kleber Foks – CardioIA Fase 3",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-esp32-devkit-v1",
+      "id": "esp",
+      "top": 0,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-dht22",
+      "id": "dht1",
+      "top": -80,
+      "left": 220,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": 100,
+      "left": 220,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 110,
+      "left": 180,
+      "attrs": { "value": "10000" }
+    }
+  ],
+  "connections": [
+    ["esp:GND.1", "dht1:GND", "black", []],
+    ["esp:3V3",   "dht1:VCC", "red",   []],
+    ["esp:4",     "dht1:SDA", "green", []],
+
+    ["esp:GND.2", "btn1:2.l", "black", []],
+    ["esp:5",     "btn1:1.l", "yellow", []],
+    ["btn1:1.l",  "r1:1",     "orange", []],
+    ["r1:2",      "esp:3V3",  "red",    []]
+  ],
+  "dependencies": {}
+}
