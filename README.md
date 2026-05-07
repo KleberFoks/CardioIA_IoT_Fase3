@@ -13,14 +13,6 @@
 ## 👨‍🎓 Integrante:
 - Kleber Foks — RM562225
 
-## 👩‍🏫 Professores:
-### Tutor(a)
-- *(informar nome do tutor)*
-### Coordenador(a)
-- *(informar nome do coordenador)*
-
----
-
 ## 📜 Descrição
 
 O **CardioIA** é um protótipo de sistema vestível de monitoramento cardíaco baseado em **ESP32**, desenvolvido na plataforma Wokwi. O sistema captura sinais vitais simulados (temperatura, umidade e batimentos cardíacos), processa os dados localmente com estratégia de resiliência offline (**Edge Computing**), transmite para a nuvem via **MQTT** e exibe os resultados em um **dashboard Node-RED** com alertas automáticos.
